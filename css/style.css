@@ -1,1 +1,52 @@
+/* Step 3: Định dạng thẻ body (font chữ và cỡ chữ chung) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
 
+/* Step 4: Định dạng thẻ header (màu nền) */
+header {
+    background-color: #1e3a8a; /* Màu xanh thẫm */
+    padding: 15px;
+}
+
+/* Step 5: Định dạng thẻ nav (màu nền thanh điều hướng) */
+nav {
+    background-color: #334155; /* Màu xám đá */
+    padding: 10px;
+}
+
+/* Step 6: Định dạng thẻ main (màu nền và cỡ chữ phần nội dung chính) */
+main {
+    background-color: #ffffff; /* Nền trắng */
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Step 7: Định dạng thẻ footer (màu nền phần chân trang) */
+footer {
+    background-color: #0f172a; /* Màu xanh đen */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Step 8: Định dạng thẻ li (thuộc tính hiển thị ngang và chiều rộng) */
+li {
+    display: inline-block; /* Hiển thị các mục menu nằm ngang hàng */
+    width: 120px;          /* Chiều rộng cố định cho mỗi mục */
+}
+
+/* Step 9: Định dạng thẻ h1 (căn lề chữ, font chữ và màu chữ) */
+h1 {
+    text-align: center;         /* Căn giữa tiêu đề */
+    font-family: 'Georgia', serif; /* Font chữ riêng cho tiêu đề h1 */
+    color: #ffffff;             /* Màu chữ trắng nổi bật trên nền header xanh */
+}
+
+/* Step 10: Định dạng thẻ p (độ giãn dòng) */
+p {
+    line-height: 1.6; /* Tăng độ giãn dòng giúp văn bản dễ đọc hơn */
+}
