@@ -1,52 +1,57 @@
-/* Step 3: Định dạng thẻ body (font chữ và cỡ chữ chung) */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #f4f4f4;
-    color: #333333;
+/* ==========================================================================
+   HOMEWORK 2 - CSS STYLING
+   ========================================================================== */
+
+/* Thêm style ẩn/hiển thị cho nút Skip Link để tăng tính trải nghiệm (Tùy chọn phụ nhưng nên có) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
 }
 
-/* Step 4: Định dạng thẻ header (màu nền) */
-header {
-    background-color: #1e3a8a; /* Màu xanh thẫm */
-    padding: 15px;
-}
+/* YÊU CẦU 2: Comment out thuộc tính định dạng cũ của thẻ li */
+/* li {
+    display: inline;
+} 
+*/
 
-/* Step 5: Định dạng thẻ nav (màu nền thanh điều hướng) */
+/* YÊU CẦU 3: Đổi nav thành inline-block và có độ rộng khoảng 80% */
 nav {
-    background-color: #334155; /* Màu xám đá */
-    padding: 10px;
+    display: inline-block;
+    width: 80%;
 }
 
-/* Step 6: Định dạng thẻ main (màu nền và cỡ chữ phần nội dung chính) */
-main {
-    background-color: #ffffff; /* Nền trắng */
-    font-size: 18px;
-    padding: 20px;
+/* YÊU CẦU 3: Dùng descendant selector để định dạng riêng cho ảnh nằm trong nav (Rộng 10%) */
+nav img {
+    width: 10%;
 }
 
-/* Step 7: Định dạng thẻ footer (màu nền phần chân trang) */
-footer {
-    background-color: #0f172a; /* Màu xanh đen */
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
+/* YÊU CẦU 4 & 5: Định dạng class .grid thành hệ thống lưới 2 cột khoảng 40% 
+   Đồng thời thêm justify-content, align-items, row-gap để căn chỉnh giao diện theo mẫu */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
 }
 
-/* Step 8: Định dạng thẻ li (thuộc tính hiển thị ngang và chiều rộng) */
-li {
-    display: inline-block; /* Hiển thị các mục menu nằm ngang hàng */
-    width: 120px;          /* Chiều rộng cố định cho mỗi mục */
+/* YÊU CẦU 5: Dùng descendant selector định dạng ảnh trong class .grid rộng 100% */
+.grid img {
+    width: 100%;
 }
 
-/* Step 9: Định dạng thẻ h1 (căn lề chữ, font chữ và màu chữ) */
-h1 {
-    text-align: center;         /* Căn giữa tiêu đề */
-    font-family: 'Georgia', serif; /* Font chữ riêng cho tiêu đề h1 */
-    color: #ffffff;             /* Màu chữ trắng nổi bật trên nền header xanh */
-}
-
-/* Step 10: Định dạng thẻ p (độ giãn dòng) */
-p {
-    line-height: 1.6; /* Tăng độ giãn dòng giúp văn bản dễ đọc hơn */
+/* YÊU CẦU 6: Định dạng class .flex và tinh chỉnh flex-wrap, justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
